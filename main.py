@@ -24,8 +24,6 @@ scorers=player_0 +' ' +str(goal_0) +', '+ player_1 +' '+str(goal_1)
 who scored when in the format """
 report = f'{player_0} scored in the {goal_0}nd minute\n{player_1} scored in the {goal_1}th minute' 
 
-report1 =player_0 +' scored in the '+ str(goal_0)+'nd minute' '\n'+ player_1 +' scored in the '+ str(goal_1)+ 'th minute' 
-
 
 
 # 2.1. Choose a player that played in the soccer match and store his name as a string in the variable player
@@ -38,12 +36,12 @@ first_name = player[0: find1 ]
 
 
 # 2.3 last_name_len : use find , slicing and len to isolate and store the length of their last name
-last_name_len = len(player[find1 +1 : len(player) + 1])
+last_name_len = len(player[find1 +1 : ])
   
 
 
 # 2.4 name_short : isolate and store the player's name in this format: G. van Examplestein
-name_short = first_name[0] + '. ' + (player[find1 +1 : len(player) + 1])
+name_short = first_name[0] + '. ' + (player[find1 +1 : ])
 
 
 # 2.5 their first name len() times plus an exclamation mark( ! )
@@ -65,12 +63,12 @@ good_chant = chant[-1] != ' '
 # print opdrachten
 
 print('scorers is :' ,scorers)
-print(report1)
 print(report)
 print(f' first name is {first_name}')
 print(f' len last name is {last_name_len}')
 print(f' name short is {name_short}')
 print(f' chant is {chant}')
 print(f' good_chant is {good_chant}')
+print('nw')
 
-#  wincpy check strings
+#  wincpy check strings is OK
